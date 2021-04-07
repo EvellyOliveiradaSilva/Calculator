@@ -22,7 +22,16 @@ else if($operacao=='multiplicacao'){
     $resultado = $numberOne*$numberTwo;
 }
 
-echo "número: $numberOne<br>";
-echo "número: $numberTwo <br>";
-echo "Tipo de operação: $operacao<br>";
-echo "Resultado: $resultado";
+
+?>
+
+<b>Número1</b>: <?php echo $numberOne; ?><br/>
+<b>Número2</b>: $numberTwo <br/>
+<b>Operação</b>: $operacao <br/>
+<b>Resultado</b>: $resultado
+
+
+<br/>
+<br/>
+<br/>
+
