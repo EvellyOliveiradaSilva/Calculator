@@ -4,7 +4,7 @@ $numberOne = 2;
 
 $numberTwo = 25;
 
-$operacao = 'subtracao';
+$operacao = 'multiplicacao';
 
 $resultado = 0;
 
@@ -21,4 +21,7 @@ else if($operacao=='multiplicacao'){
     $resultado = $numberOne*$numberTwo;
 }
 
-echo $number;
+echo "número: $numberOne<br>";
+echo "número: $numberTwo <br>";
+echo "Tipo de operação: $operacao<br>";
+echo "Resultado: $resultado";
