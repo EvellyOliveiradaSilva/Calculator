@@ -30,6 +30,7 @@ else if($operacao=='multiplicação'){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css"/>
     <title>Calculator</title>
 </head>
 <body>
@@ -41,15 +42,15 @@ else if($operacao=='multiplicação'){
     <form action='http://localhost/Calculator/'>
 
         <label for="numberOne">1° Número:</label>
-        <input type="number" id="numberOne" name="number1" value="<?php echo $numberOne; ?>" ><br/>
+        <input type="number" id="numberOne" name="number1" value="<?php echo $numberOne; ?>"/><br/>
         <label for="numberTwo">2° Número:</label>
-        <input type="number" id="numberTwo" name="number2" value="<?php echo $numberTwo; ?>" ><br/>
+        <input type="number" id="numberTwo" name="number2" value="<?php echo $numberTwo; ?>" /><br/>
         <br/>
 
-        <input type="submit" value="soma" name="operacao"/><br/>
-        <input type="submit" value="subtração" name="operacao" /><br/>
-        <input type="submit" value="divisão" name="operacao" /><br/>
-        <input type="submit" value="multiplicação" name="operacao" /><br/>
+        <input class="btn-soma" type="submit" value="soma" name="operacao"/><br/>
+        <input class="btn-subtracao" type="submit" value="subtração" name="operacao" /><br/>
+        <input class="btn-divisao" type="submit" value="divisão" name="operacao" /><br/>
+        <input class="btn-multiplicacao" type="submit" value="multiplicação" name="operacao" /><br/>
 
     </form>
 </body>
