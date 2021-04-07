@@ -6,20 +6,25 @@ $numberTwo = $_REQUEST['number2'];
 
 $operacao = $_REQUEST['operacao'];
 
+$exito = false;
 
 $resultado = 0;
 
 if($operacao == 'soma'){
     $resultado = $numberOne+$numberTwo;
+    $exito = true;
 }
 else if($operacao=='subtração'){
     $resultado = $numberOne-$numberTwo;
+    $exito = true;
 }
 else if($operacao=='divisão'){
     $resultado = $numberOne/$numberTwo;
+    $exito = true;
 }
 else if($operacao=='multiplicação'){
     $resultado = $numberOne*$numberTwo;
+    $exito = true;
 }
 
 
@@ -34,6 +39,15 @@ else if($operacao=='multiplicação'){
     <title>Calculator</title>
 </head>
 <body>
+    <?php
+        if($exito==true){
+            echo "<h3>  :-) Operação com exito!!!!!!!!!! </h3>";
+        }
+        else{
+            echo " <h3> :-( Que horror, deu um erro. </h3>";
+        }
+    ?>
+
     <b>Número1</b>: <?php echo $numberOne; ?> <br/>
     <b>Número2</b>: <?php echo $numberTwo; ?> <br/>
     <b>Operação</b>: <?php echo $operacao; ?> <br/>
