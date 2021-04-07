@@ -24,23 +24,33 @@ else if($operacao=='multiplicação'){
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <b>Número1</b>: <?php echo $numberOne; ?> <br/>
+    <b>Número2</b>: <?php echo $numberTwo; ?> <br/>
+    <b>Operação</b>: <?php echo $operacao; ?> <br/>
+    <b>Resultado</b>: <?php echo $resultado; ?>  <br/>
 
-<b>Número1</b>: <?php echo $numberOne; ?> <br/>
-<b>Número2</b>: <?php echo $numberTwo; ?> <br/>
-<b>Operação</b>: <?php echo $operacao; ?> <br/>
-<b>Resultado</b>: <?php echo $resultado; ?>  <br/>
+    <form action='http://localhost/Calculator/'>
 
-<form action='http://localhost/Calculator/'>
+        <label for="numberOne">1° Número:</label>
+        <input type="number" id="numberOne" name="number1" value="<?php echo $numberOne; ?>" ><br/>
+        <label for="numberTwo">2° Número:</label>
+        <input type="number" id="numberTwo" name="number2" value="<?php echo $numberTwo; ?>" ><br/>
+        <br/>
 
-    <label for="numberOne">1° Número:</label>
-    <input type="number" id="numberOne" name="number1" value="<?php echo $numberOne; ?>" ><br/>
-    <label for="numberTwo">2° Número:</label>
-    <input type="number" id="numberTwo" name="number2" value="<?php echo $numberTwo; ?>" ><br/>
-    <br/>
+        <input type="submit" value="soma" name="operacao"/><br/>
+        <input type="submit" value="subtração" name="operacao" /><br/>
+        <input type="submit" value="divisão" name="operacao" /><br/>
+        <input type="submit" value="multiplicação" name="operacao" /><br/>
 
-    <input type="submit" value="soma" name="operacao"/><br/>
-    <input type="submit" value="subtração" name="operacao" /><br/>
-    <input type="submit" value="divisão" name="operacao" /><br/>
-    <input type="submit" value="multiplicação" name="operacao" /><br/>
-
-</form>
+    </form>
+</body>
+</html>
