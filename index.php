@@ -1,10 +1,10 @@
 <?php
 
-$numberOne = 2;
+$numberOne = $_REQUEST['number1'];
 
-$numberTwo = 25;
+$numberTwo = $_REQUEST['number2'];
 
-$operacao = 'subtracao';
+$operacao = $_REQUEST['operacao'];
 
 $resultado = 0;
 
@@ -21,4 +21,4 @@ else if($operacao=='multiplicacao'){
     $resultado = $numberOne*$numberTwo;
 }
 
-echo $number;
+echo $resultado;
