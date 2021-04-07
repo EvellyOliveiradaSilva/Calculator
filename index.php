@@ -6,6 +6,7 @@ $numberTwo = $_REQUEST['number2'];
 
 $operacao = $_REQUEST['operacao'];
 
+
 $resultado = 0;
 
 if($operacao == 'soma'){
@@ -21,4 +22,7 @@ else if($operacao=='multiplicacao'){
     $resultado = $numberOne*$numberTwo;
 }
 
-echo $resultado;
+echo "número: $numberOne<br>";
+echo "número: $numberTwo <br>";
+echo "Tipo de operação: $operacao<br>";
+echo "Resultado: $resultado";
